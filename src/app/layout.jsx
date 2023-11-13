@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Box className='navbar' sx={{ color: '#000', mx: {sm: 1, md: 1.5} }}>
+        <Box className='navbar' sx={{ color: '#000', mx: { sm: 1, md: 1.5 } }}>
           <Box className='nav-dsk' sx={{ py: '16px', display: { xs: 'none', sm: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'space-between' }}>
             <Box display={'flex'} alignItems={'center'} gap={'32px'}>
               <Box><Link href={'/'}><Image src={logo} alt='no_img' width={'182'} /></Link></Box>
