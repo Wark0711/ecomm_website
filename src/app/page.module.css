@@ -1,0 +1,52 @@
+.ft-box {
+    color: white;
+    text-align: center;
+}
+
+.ft {
+    background-color: #78909c;
+    color: white;
+    height: 48px; 
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    transition-duration: 200ms;
+}
+
+.ft:hover {
+    transform: scale(1.20);
+    background-color: #607d8b;
+    transition: all ease-in-out 200ms;
+}
+
+.ft-logo{
+    font-size: 24px;
+}
+
+.foot-links{
+    text-decoration: none;
+    color: #78909c;
+    transition: 250ms;
+}
+
+.foot-links:hover{
+    color: #3f5662;
+    transition: all ease-in-out 250ms;
+}
+
+.ft-btn{
+    border: 2px solid #78909c;
+    border-radius: 8px;
+    padding: 10px 6px;
+    text-align: center;
+    transition: 250ms;
+}
+
+.ft-btn:hover{
+    color: #ffffff;
+    background-color: #78909c;
+    transition: all ease-in-out 250ms;
+}

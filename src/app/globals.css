@@ -2,3 +2,11 @@
     text-decoration: none;
     color: #000;
 }
+
+.nav-links{
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    color: #78909c;
+    font-weight: 500;
+}
