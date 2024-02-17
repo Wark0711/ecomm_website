@@ -50,3 +50,17 @@
     background-color: #78909c;
     transition: all ease-in-out 250ms;
 }
+
+.ft-btn2{
+    border: 2px solid #78909c;
+    border-radius: 3px;
+    padding: 12px 6px;
+    text-align: center;
+    transition: 250ms;
+}
+
+.ft-btn2:hover{
+    color: #ffffff;
+    background-color: #78909c;
+    transition: all ease-in-out 250ms;
+}

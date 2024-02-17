@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function Footer() {
     return (
         <Box>
-            <Box sx={{ backgroundImage: `url(${logo.src})`, backgroundPosition: 'center center', minHeight: 300, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Box sx={{ backgroundImage: `url(${logo.src})`, backgroundPosition: 'center center', borderRadius: 1, minHeight: 300, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Box className={styles['ft-box']}>
                     <Box sx={{ fontSize: 24, fontWeight: 500 }}>Connect with Us</Box>
                     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 2, flexWrap: 'wrap' }}>
@@ -97,9 +97,9 @@ export default function Footer() {
                 </Box>
             </Box>
             <Box>
-                <Box sx={{ backgroundColor: '#3a3a3a', color: '#ffffff', fontSize: '14px', display: 'flex', alignItems: 'top', justifyContent: 'space-between', }}>
-                    <Box fontFamily={'Poppins, sans-serif'} p={4}>Copyright &copy; {`${new Date().getFullYear()}`} Furniture Store</Box>
-                    <Box fontFamily={'Poppins, sans-serif'} p={4}>Powered by Furniture Store</Box>
+                <Box sx={{ backgroundColor: '#3a3a3a', color: '#ffffff', fontSize: '14px', borderRadius: 1, display: 'flex', alignItems: 'top', justifyContent: 'space-between', }}>
+                    <Box fontFamily={'Poppins, sans-serif'} p={4}>Copyright &copy; {`${new Date().getFullYear()}`} WDT Express</Box>
+                    <Box fontFamily={'Poppins, sans-serif'} p={4}>Powered by WDT Express</Box>
                 </Box>
             </Box>
         </Box>
