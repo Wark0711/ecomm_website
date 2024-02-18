@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   // console.log(children);
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={pop.className}>
         <Navbar />
         <Box>{children}</Box>
         <Footer />
