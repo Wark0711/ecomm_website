@@ -21,10 +21,26 @@ export default function Draw() {
                         <Button><MdClear onClick={() => setOpen(false)} color='#607d8b' fontSize={'24px'} /></Button>
                     </Box>
                     <Box>
-                        <Box px={2} py={1.5} borderTop={'1px solid #dddddd'}><Link className='nav-link' href={'/products/all'}>All Products</Link></Box>
-                        <Box px={2} py={1.5} borderTop={'1px solid #dddddd'}><Link className='nav-link' href={'/products/list'}>List</Link></Box>
-                        <Box px={2} py={1.5} borderTop={'1px solid #dddddd'}><Link className='nav-link' href={'/about-us'}>About Us</Link></Box>
-                        <Box px={2} py={1.5} borderTop={'1px solid #dddddd'}><Link className='nav-link' href={'/account'}>My Account</Link></Box>
+                        <Link className='nav-link' href={'/products/all'}>
+                            <Box px={2} py={1.5} borderTop={'1px solid #dddddd'} onClick={() => setOpen(false)}>
+                                All Products
+                            </Box>
+                        </Link>
+                        <Link className='nav-link' href={'/products/list'}>
+                            <Box px={2} py={1.5} borderTop={'1px solid #dddddd'} onClick={() => setOpen(false)}>
+                                List
+                            </Box>
+                        </Link>
+                        <Link className='nav-link' href={'/about-us'}>
+                            <Box px={2} py={1.5} borderTop={'1px solid #dddddd'} onClick={() => setOpen(false)}>
+                                About Us
+                            </Box>
+                        </Link>
+                        <Link className='nav-link' href={'/account'}>
+                            <Box px={2} py={1.5} borderTop={'1px solid #dddddd'} onClick={() => setOpen(false)}>
+                                My Account
+                            </Box>
+                        </Link>
                     </Box>
                 </Box>
             </Drawer>
