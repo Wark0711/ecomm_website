@@ -49,7 +49,7 @@ export default function Home() {
           <Box width={'100%'} fontSize={'18px'} display={'flex'} alignItems={'center'} gap={4} flexDirection={{xs: 'column', sm: 'column', md: 'row'}}>
             <Box width={{xs: '90%', sm: '80%', md: '33%'}} color={"#3a3a3a"}>
               <Box>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure earum a magnam nostrum, nesciunt repudiandae quidem minima culpa esse dolorum dolore.</Box>
-              <Box mt={4} mb={3} display={'flex'} alignItems={'center'} justifyContent={'center'} gap={2}>
+              <Box mt={4} mb={3} display={'flex'} alignItems={'center'} justifyContent={{xs: 'flex-start', sm:'flex-start', md: 'center'}} gap={2}>
                 <Box>
                   <Avatar alt='nil' sx={{ width: 60, height: 60 }} />
                 </Box>
@@ -58,7 +58,7 @@ export default function Home() {
             </Box>
             <Box width={{xs: '90%', sm: '80%', md: '33%'}} color={"#3a3a3a"}>
               <Box>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure earum a magnam nostrum, nesciunt repudiandae quidem minima culpa esse dolorum dolore.</Box>
-              <Box mt={4} mb={3} display={'flex'} alignItems={'center'} justifyContent={'center'} gap={2}>
+              <Box mt={4} mb={3} display={'flex'} alignItems={'center'} justifyContent={{xs: 'flex-start', sm:'flex-start', md: 'center'}} gap={2}>
                 <Box>
                   <Avatar alt='nil' sx={{ width: 60, height: 60 }} />
                 </Box>
@@ -67,9 +67,9 @@ export default function Home() {
             </Box>
             <Box width={{xs: '90%', sm: '80%', md: '33%'}} color={"#3a3a3a"}>
               <Box>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure earum a magnam nostrum, nesciunt repudiandae quidem minima culpa esse dolorum dolore.</Box>
-              <Box mt={4} mb={3} display={'flex'} alignItems={'center'} justifyContent={'center'} gap={2}>
+              <Box mt={4} mb={3} display={'flex'} alignItems={'center'} justifyContent={{xs: 'flex-start', sm:'flex-start', md: 'center'}} gap={2}>
                 <Box>
-                  <Avatar alt='nil' src='' sx={{ width: 60, height: 60 }} />
+                  <Avatar alt='nil' sx={{ width: 60, height: 60 }} />
                 </Box>
                 <Box>Patricia Warren</Box>
               </Box>
