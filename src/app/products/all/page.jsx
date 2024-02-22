@@ -1,19 +1,15 @@
 import { Box } from "@mui/material"
-import Image from "next/image"
-import Link from "next/link"
 import ProdList from "./prodlist";
+import SortFilter from "./sortfilter";
 
-export default async function Products(params) {
+export default async function Products() {
 
     const productList = await prodView()
-    // console.log(productList);
 
     return (
         <Box>
-            <Box></Box>
-            <Box>
-                <ProdList products={productList.filter(item => item.id !== 14)} />
-            </Box>
+            <SortFilter />
+            <ProdList products={productList.filter(item => item.id !== 14)} />
         </Box>
     )
 }
