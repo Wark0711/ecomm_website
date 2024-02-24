@@ -1,7 +1,9 @@
+import React from "react"
 import { Box } from "@mui/material"
 import Image from "next/image"
 import Link from "next/link"
-import React from "react"
+import { IoIosCart } from 'react-icons/io'
+import Tooltip from '@mui/material/Tooltip';
 
 export default function ProdList({ products }) {
     return (
@@ -9,17 +11,20 @@ export default function ProdList({ products }) {
             {
                 products.map((item, index) => (
                     <Box key={index} my={4}>
-                        <Link style={{ textDecoration: 'none', position: 'relative' }} href={`/products/single/${item.id}`}>
-                            <Box overflow={'hidden'} position={'relative'}>
-                                <Box sx={{ opacity: 1, '&:hover': { transform: 'scale(1.1)', opacity: .9 }, transitionDuration: '400ms' }}>
+                        <Box overflow={'hidden'} position={'relative'}>
+                            <Box sx={{ opacity: 1, '&:hover': { transform: 'scale(1.1)', opacity: .9 }, transitionDuration: '400ms' }}>
+                                <Link style={{ textDecoration: 'none', position: 'relative' }} href={`/products/single/${item.id}`}>
                                     <Image alt="nil" style={{ display: 'block', }} height={200} width={300} src={item.thumbnail} />
-                                </Box>
-                                {/* <Box position={'absolute'} top={0} right={5}>
-                                    <Box>a</Box>
-                                    <Box>a</Box>
-                                </Box> */}
+                                </Link>
                             </Box>
-                        </Link>
+                            {/* <Box position={'absolute'} top={10} right={10}>
+                                <Tooltip title='Add to cart' placement="left" arrow backgroundColor='#607d8b'>
+                                    <Box height={16} color={'#607d8b'} backgroundColor={'#ececec'} p={.75} borderRadius={'50%'} sx={{ '&:hover': { backgroundColor: '#fff' }, transitionDuration: '250ms' }}>
+                                        <IoIosCart />
+                                    </Box>
+                                </Tooltip>
+                            </Box> */}
+                        </Box>
                         <Box px={3}>
                             <Box fontSize={'.85rem'} color={'#808285'} my={.5} textTransform={'capitalize'}>{item.category}</Box>
                             <Box color={'#607d8b'} fontWeight={600}>{item.title}</Box>
