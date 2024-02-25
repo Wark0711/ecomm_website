@@ -8,7 +8,7 @@ export default function Cart() {
     const [items, setItems] = useState(1)
 
     return (
-        <Box my={2} display={'flex'}  alignItems={'center'} gap={3} justifyContent={'space-between'} flexWrap={'wrap'}>
+        <Box my={2} mr={2} display={'flex'}  alignItems={'center'} gap={1} justifyContent={'space-between'} flexWrap={'wrap'}>
             <Box display={'flex'} alignItems={'center'}>
                 <Box sx={{ height: 24, width: 24, padding: 1, display: 'flex', alignItems: 'center', '&:hover': { backgroundColor: '#f2f2f2' }, justifyContent: 'center', border: '1px solid #dddddd', cursor: 'pointer' }} onClick={() => setItems(c => c > 2 ? c - 1 : 1)}>-</Box>
                 <Box sx={{ height: 24, width: 24, padding: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid #dddddd', color: '#78909c' }}>{items}</Box>
