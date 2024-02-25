@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Cart from "./cart";
 import Ratings from "./rating";
+import '../../../globals.css'
 
 export default async function SingleItem({ params }) {
 
@@ -20,7 +21,7 @@ export default async function SingleItem({ params }) {
                 <Box width={{ xs: '100%', sm: '50%', md: '40%' }} sx={{ aspectRatio: 16 / 9 }} position={'relative'}>
                     <Image src={product?.thumbnail} fill alt="no img" />
                 </Box>
-                <Box width={{ xs: '100%', sm: '50%', md: '60%' }}>
+                <Box width={{ xs: '100%', sm: '50%', md: '60%' }} ml={1}>
                     <>
                         <Breadcrumbs>
                             <Link style={{ color: '#777', textDecoration: 'none' }} href="/">Home</Link>
@@ -37,6 +38,7 @@ export default async function SingleItem({ params }) {
                 </Box>
             </Box>
             <Ratings details={product} />
+
         </Box>
     )
 }
