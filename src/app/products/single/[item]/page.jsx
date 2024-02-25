@@ -1,9 +1,10 @@
 import { Box, Breadcrumbs, Rating, Typography } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 import Cart from "./cart";
 import Ratings from "./rating";
 import '../../../globals.css'
+import Imgset from "./imageset";
+import RelatedProduct from "./relproducts";
 
 export default async function SingleItem({ params }) {
 
@@ -18,8 +19,8 @@ export default async function SingleItem({ params }) {
     return (
         <Box my={6}>
             <Box display={'flex'} alignItems={'top'} gap={2} flexDirection={{ xs: 'column', sm: 'row' }}>
-                <Box width={{ xs: '100%', sm: '50%', md: '40%' }} sx={{ aspectRatio: 16 / 9 }} position={'relative'}>
-                    <Image src={product?.thumbnail} fill alt="no img" />
+                <Box width={{ xs: '100%', sm: '50%', md: '40%' }}>
+                    <Imgset imgList={product?.images} thumbnail={product?.thumbnail} />
                 </Box>
                 <Box width={{ xs: '100%', sm: '50%', md: '60%' }} ml={1}>
                     <>
@@ -38,7 +39,7 @@ export default async function SingleItem({ params }) {
                 </Box>
             </Box>
             <Ratings details={product} />
-
+            <RelatedProduct category={product?.category} id={product?.id} />
         </Box>
     )
 }
