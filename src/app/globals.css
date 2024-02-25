@@ -1,12 +1,21 @@
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: #3a3a3a;
 }
 
-.nav-links{
+.nav-links {
     text-decoration: none;
     text-align: center;
     font-size: 17px;
     color: #78909c;
     font-weight: 500;
+}
+
+.tab-list {
+    font-weight: 600;
+    color: #78909c;
+}
+
+.MuiTabs-indicator  {
+    background-color: #78909c;
 }
