@@ -28,7 +28,7 @@ export default function ProdList({ products }) {
                         <Box px={3}>
                             <Box fontSize={'.85rem'} color={'#808285'} my={.5} textTransform={'capitalize'}>{item.category}</Box>
                             <Box color={'#607d8b'} fontWeight={600}>{item.title}</Box>
-                            <Box color={'#3a3a3a'} fontWeight={700} fontSize={'.9rem'}> <span style={{ textDecoration: 'line-through', color: '#808285', marginRight: '8px' }}>&#8377; {(item.price * 90 * (1 + (item.discountPercentage / 100))).toFixed(2)}</span> &#8377; {item.price * 90}.00</Box>
+                            <Box color={'#3a3a3a'} fontWeight={700} fontSize={'.9rem'}> <span style={{ textDecoration: 'line-through', color: '#808285', marginRight: '8px' }}>&#8377; {(item.price * 90 * (1 + (item.discountPercentage / 100))).toFixed(2)}</span> &#8377; {(item.price * 90).toFixed(2)}</Box>
                         </Box>
                     </Box>
                 ))

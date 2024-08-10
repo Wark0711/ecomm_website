@@ -33,7 +33,7 @@ export default async function SingleItem({ params }) {
                     <Box textTransform={'capitalize'} color={'#78909c'} my={1}>{product?.category}, {product?.brand}</Box>
                     <Box textTransform={'uppercase'} color={'#607d8b'} fontWeight={500} fontSize={'1.125rem'}>{product?.title}</Box>
                     <Rating color="#3a3a3a" defaultValue={product?.rating} precision={0.5} readOnly />
-                    <Box color={'#3a3a3a'} fontWeight={700} fontSize={'1.25rem'}> <span style={{ textDecoration: 'line-through', color: '#808285', marginRight: '8px' }}>&#8377; {(product?.price * 90 * (1 + (product?.discountPercentage / 100))).toFixed(2)}</span> &#8377; {product?.price * 90}.00</Box>
+                    <Box color={'#3a3a3a'} fontWeight={700} fontSize={'1.25rem'}> <span style={{ textDecoration: 'line-through', color: '#808285', marginRight: '8px' }}>&#8377; {(product?.price * 90 * (1 + (product?.discountPercentage / 100))).toFixed(2)}</span> &#8377; {(item.price * 90).toFixed(2)}</Box>
                     <Box mt={0.5} color={'#3a3a3a'} pr={2}>{product?.description}</Box>
                     <Cart />
                 </Box>
